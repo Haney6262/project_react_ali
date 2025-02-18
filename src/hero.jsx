@@ -1,5 +1,5 @@
 import React from 'react';
-import './Hero.css';
+import './hero.css';
 import fharImage from './images/fhar_hero_page__1.png';
 
 function Hero() {
