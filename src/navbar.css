@@ -1,29 +1,76 @@
 /* Navbar.css */
+
 .navbar {
-    background-color: transparent; 
-    color: #800000; 
-    padding: 10px 20px;
-    font-size: 1.2em; 
-    margin: 0;
-    display: flex;
-    justify-content: center;
+  background-color: transparent; 
+  color: #800000; 
+  padding: 10px 20px;
+  font-size: 1.2em; 
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar li {
+  padding: 10px 20px;
+  position: relative;
+}
+
+.navbar a {
+  color: #800000;
+  text-decoration: none;
+  font-size: 1.4em; 
+  align-items: center;
+  display: block;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar a::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(128, 0, 0, 0.1);
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.3s ease;
+  border-radius: 5px;
+  z-index: -1;
+}
+
+.navbar a:hover::before {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.navbar a:active {
+  animation: clickEffect 0.2s forwards;
+}
+
+
+@keyframes hoverEffect {
+  0% {
+    background-color: transparent;
+    transform: scale(1);
   }
-  
-  .navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
+  100% {
+    background-color: rgba(128, 0, 0, 0.1);
+    transform: scale(1.05);
   }
-  
-  .navbar li {
-    padding: 10px 20px;
+}
+
+@keyframes clickEffect {
+  0% {
+    background-color: rgba(128, 0, 0, 0.1);
   }
-  
-  .navbar a {
-    color: #800000;
-    text-decoration: none;
-    font-size: 1.4em; 
-    align-items: center;
+  100% {
+    background-color: #1f4529;
   }
-  
+}
