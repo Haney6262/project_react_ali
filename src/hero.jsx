@@ -1,4 +1,4 @@
-import "./Hero.css"
+import "./hero.css"
 import { Link } from "react-router-dom"
 import fharF from './images/fhar_hero_page__1.png';
 
