@@ -6,6 +6,7 @@ import About from './about';
 import Experience from './Experience';
 import Projects from './Projects';
 import Contact from './Contact';
+import Certificate from './Cert.jsx';
 import './App.css';
 
 
@@ -20,6 +21,7 @@ function App() {
           <Route path="/Experience" element={<Experience />} />
           <Route path="/Projects" element={<Projects/>} />
           <Route path="/Contact" element={<Contact />} />
+          <Route path="/Cert" element={<Certificate />} />
 
 
         </Routes>
