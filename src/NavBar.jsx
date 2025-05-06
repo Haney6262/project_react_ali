@@ -44,6 +44,9 @@ function Navbar() {
           <Link to="/Experience">Experience</Link>
         </li>
         <li>
+          <Link to="/Cert">Certificate</Link>
+        </li>
+        <li>
           <Link to="/about">About</Link>
         </li>
         <li>
